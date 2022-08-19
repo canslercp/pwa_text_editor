@@ -16,7 +16,7 @@ module.exports = () => {
       editor: './src/js/editor.js'
     },
     output: {
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
@@ -33,9 +33,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'Editor',
-        description: 'Never lose your progress!',
+        name: 'JATE',
+        short_name: 'JATE',
+        description: 'Another text editor',
         background_color: '#272822',
         theme_color: '#31a9e1',
         start_url: './',
